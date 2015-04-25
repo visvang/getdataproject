@@ -2,19 +2,23 @@
 This is a codebook for course project of Getting and Cleaning Data course. It explains how the script in "run_analysis.R" file works and transforms the data.
 
 ## Input
-**run_analysis.R**	script into working directory
-**UCI HAR Dataset**	directory into working directory
+- **run_analysis.R**	script into working directory
+- **UCI HAR Dataset**	directory into working directory
 
 ## Output
 **cleandata.txt**	file in the working directory
 
 ## Description of cleandata.txt
 Cols. 1-79:				numeric		various mean and standard deviation measurements
+
 (the full list of measurements is in the next section)
+
 Col. 80	(*subject*):	numeric		subject labels
+
 Col. 81	(*activity*):	character	activity names
 
 Separator is ";"
+
 No row names
 
 Contains average of each measurement for each subject and each activity.
@@ -30,27 +34,46 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
+
 
 The set of variables that were estimated from these signals and selected for the new dataset are: 
 
 mean(): Mean value
+
 std(): Standard deviation
+
 
 Each of 30 subjects performed six activities (walking, walking_upstairs, walking_downstairs, sitting, standing, laying) and for each activity all the aforementioned measurements were collected.
 
@@ -59,84 +82,135 @@ Then the mean for each measurement for each subject and each activity was found 
 
 #### Full measurements variables names list
 tBodyAcc-mean()-X
+
 tBodyAcc-mean()-Y
+
 tBodyAcc-mean()-Z
+
 tBodyAcc-std()-X
+
 tBodyAcc-std()-Y
+
 tBodyAcc-std()-Z
+
 tGravityAcc-mean()-X
+
 tGravityAcc-mean()-Y
+
 tGravityAcc-mean()-Z
+
 tGravityAcc-std()-X
+
 tGravityAcc-std()-Y
+
 tGravityAcc-std()-Z
+
 tBodyAccJerk-mean()-X
+
 tBodyAccJerk-mean()-Y
+
 tBodyAccJerk-mean()-Z
+
 tBodyAccJerk-std()-X
+
 tBodyAccJerk-std()-Y
+
 tBodyAccJerk-std()-Z
+
 tBodyGyro-mean()-X
+
 tBodyGyro-mean()-Y
+
 tBodyGyro-mean()-Z
+
 tBodyGyro-std()-X
+
 tBodyGyro-std()-Y
+
 tBodyGyro-std()-Z
+
 tBodyGyroJerk-mean()-X
+
 tBodyGyroJerk-mean()-Y
+
 tBodyGyroJerk-mean()-Z
+
 tBodyGyroJerk-std()-X
+
 tBodyGyroJerk-std()-Y
+
 tBodyGyroJerk-std()-Z
+
 tBodyAccMag-mean()
+
 tBodyAccMag-std()
+
 tGravityAccMag-mean()
+
 tGravityAccMag-std()
+
 tBodyAccJerkMag-mean()
+
 tBodyAccJerkMag-std()
+
 tBodyGyroMag-mean()
+
 tBodyGyroMag-std()
+
 tBodyGyroJerkMag-mean()
+
 tBodyGyroJerkMag-std()
+
 fBodyAcc-mean()-X
+
 fBodyAcc-mean()-Y
+
 fBodyAcc-mean()-Z
+
 fBodyAcc-std()-X
+
 fBodyAcc-std()-Y
+
 fBodyAcc-std()-Z
-fBodyAcc-meanFreq()-X
-fBodyAcc-meanFreq()-Y
-fBodyAcc-meanFreq()-Z
 fBodyAccJerk-mean()-X
+
 fBodyAccJerk-mean()-Y
+
 fBodyAccJerk-mean()-Z
+
 fBodyAccJerk-std()-X
+
 fBodyAccJerk-std()-Y
+
 fBodyAccJerk-std()-Z
-fBodyAccJerk-meanFreq()-X
-fBodyAccJerk-meanFreq()-Y
-fBodyAccJerk-meanFreq()-Z
+
 fBodyGyro-mean()-X
+
 fBodyGyro-mean()-Y
+
 fBodyGyro-mean()-Z
+
 fBodyGyro-std()-X
+
 fBodyGyro-std()-Y
+
 fBodyGyro-std()-Z
-fBodyGyro-meanFreq()-X
-fBodyGyro-meanFreq()-Y
-fBodyGyro-meanFreq()-Z
+
 fBodyAccMag-mean()
+
 fBodyAccMag-std()
-fBodyAccMag-meanFreq()
+
 fBodyBodyAccJerkMag-mean()
+
 fBodyBodyAccJerkMag-std()
-fBodyBodyAccJerkMag-meanFreq()
+
 fBodyBodyGyroMag-mean()
+
 fBodyBodyGyroMag-std()
-fBodyBodyGyroMag-meanFreq()
+
 fBodyBodyGyroJerkMag-mean()
+
 fBodyBodyGyroJerkMag-std()
-fBodyBodyGyroJerkMag-meanFreq()
 
 
 ## The raw data
@@ -148,12 +222,19 @@ The raw data inside the "UCI HAR Dataset" directory consists of two folders ("te
 
 ## Important inner variables
 **testdata**	2947 obs.	of 563 variables	raw test dataset
+
 **traindata**	7352 obs.	of 563 variables	raw training dataset
+
 **features**	561 obs.	of 2 variables		list of all measured features
+
 **activities**	6 obs. 		of 2 variables		activities names and class labels
+
 **alldata**		10299 obs.	of 563 variables	test and training datasets merged together
+
 **filterdata**	10299 obs.	of 81 variables		filtered data for mean and standard deviation measurements only
+
 **newdata**		180 obs.	of 81 variables		new tidy dataset created by *run_analysis.R* script
+
 
 
 
